@@ -32,11 +32,12 @@ body {
 }
 
 /* main style  */
-section {
-  margin-top: 200px;
-}
+/* section {
+  
+} */
 .container {
   display: flex;
+  margin-top: 200px;
   justify-content: space-around;
   align-items: center;
 }
@@ -70,6 +71,7 @@ section {
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
+  border: none;
 }
 /* footer style  */
 /* footer {
@@ -88,4 +90,45 @@ footer h3 {
   font-size: 14px;
   font-weight: 700;
   text-decoration-line: underline;
+}
+
+/* responsive design  */
+
+/* design for small device */
+@media screen and (max-width: 576px) {
+  body {
+    width: 375px;
+    height: 949px;
+  }
+  .title {
+    padding-top: 20px;
+    padding-left: 24px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .container img {
+    width: 286.83px;
+    height: 220.352px;
+    margin-bottom: 77px;
+  }
+  .content-title {
+    width: 340px;
+    letter-spacing: -1.68px;
+    font-size: 48px;
+  }
+  .content-description {
+    width: 328px;
+    letter-spacing: -0.63px;
+    font-size: 18px;
+  }
+  .btn-primary {
+    width: 216px;
+    height: 68px;
+  }
+  footer h3 {
+    margin-top: 114px;
+  }
 }
